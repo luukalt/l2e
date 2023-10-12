@@ -1,0 +1,11 @@
+pip
+jupyter-book>=0.7.0b
+matplotlib
+numpy
+ipython
+bokeh
+plotly
+scipy
+pandas
+latex
+# jupyter_bokeh

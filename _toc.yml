@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Wiskunde
+    chapters:
+    - file: wi
+  - caption: Natuurkunde
+    chapters:
+    - file: na
+  - caption: Aardrijkskunde
+    chapters:
+    - file: ak 
+  - caption: Informatica [NIEUW]
+    chapters:
+    - file: it
