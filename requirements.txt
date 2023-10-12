@@ -8,4 +8,3 @@ plotly
 scipy
 pandas
 latex
-# jupyter_bokeh

@@ -4,15 +4,15 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Wiskunde
+  - caption: Voorbeelden
     chapters:
-    - file: wi
-  - caption: Natuurkunde
-    chapters:
-    - file: na
-  - caption: Aardrijkskunde
-    chapters:
-    - file: ak 
-  - caption: Informatica [NIEUW]
-    chapters:
-    - file: it
+    - file: markdown
+  # - caption: Natuurkunde
+  #   chapters:
+  #   - file: na
+  # - caption: Aardrijkskunde
+  #   chapters:
+  #   - file: ak 
+  # - caption: Informatica [NIEUW]
+  #   chapters:
+  #   - file: it
