@@ -29,6 +29,19 @@
     // Configure Google authentication.
     firebase.auth.GoogleAuthProvider.PROVIDER_ID = "google.com";
   </script>
+
+  <script>
+    // Sign in with Google.
+    function signInWithGoogle() {
+      firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).then((user) => {
+        // The user is now signed in.
+        console.log(user);
+      }).catch((error) => {
+        // Handle the error.
+        console.log(error);
+      });
+    }
+  </script>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
@@ -88,6 +101,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   <button onclick="signInWithGoogle()">Sign in with Google</button>
+    
   <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
