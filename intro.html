@@ -19,6 +19,16 @@
   </script>
 
   <script src="https://unpkg.com/firebase/compat/auth@latest/dist/auth.min.js"></script>
+  <script>
+    // Initialize the Firebase SDK.
+    firebase.initializeApp({
+      apiKey: "AIzaSyD3fManNbdFjeSb1U_-x2mlbmm3dycbnfk",
+      projectId: "learn2e",
+    });
+  
+    // Configure Google authentication.
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID = "google.com";
+  </script>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
@@ -77,7 +87,7 @@ const thebe_selector_output = ".output, .cell_output"
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
-  
+  <button onclick="signInWithGoogle()">Sign in with Google</button>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
