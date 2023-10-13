@@ -17,32 +17,7 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
-
-  <script src="https://unpkg.com/firebase/compat/auth@latest/dist/auth.min.js"></script>
-  <script>
-    // Initialize the Firebase SDK.
-    firebase.initializeApp({
-      apiKey: "AIzaSyD3fManNbdFjeSb1U_-x2mlbmm3dycbnfk",
-      projectId: "learn2e",
-    });
   
-    // Configure Google authentication.
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID = "google.com";
-  </script>
-
-  <script>
-    // Sign in with Google.
-    function signInWithGoogle() {
-      firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).then((user) => {
-        // The user is now signed in.
-        console.log(user);
-      }).catch((error) => {
-        // Handle the error.
-        console.log(error);
-      });
-    }
-  </script>
-    
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 <link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
@@ -100,8 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
-  <button onclick="signInWithGoogle()">Sign in with Google</button>
-    
+  
   <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
@@ -241,73 +215,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/luukalt/math/main?urlpath=tree/intro.md" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/luukalt/math/blob/main/intro.md" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li>
-<button onclick="initThebeSBT()"
-  class="btn btn-sm btn-launch-thebe dropdown-item"
-  title="Launch Thebe"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-play"></i>
-  </span>
-<span class="btn__text-container">Live Code</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -360,23 +267,6 @@ const thebe_selector_output = ".output, .cell_output"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="_sources/intro.ipynb" target="_blank"
-   class="btn btn-sm btn-download-notebook-button dropdown-item"
-   title="Download notebook file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="btn__text-container">.ipynb</span>
-</a>
-</li>
-      
       
       
       
